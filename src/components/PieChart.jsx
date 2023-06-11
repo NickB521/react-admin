@@ -9,6 +9,7 @@ const PieChart = () => {
   return (
     <ResponsivePie
       data={data}
+      colors={{ scheme: 'pink_yellowGreen' }}
       theme={{
         axis: {
           domain: {

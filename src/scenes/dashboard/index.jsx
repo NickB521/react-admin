@@ -2,14 +2,13 @@ import { Box, Button, IconButton, Typography, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
 import { mockTransactions } from "../../data/mockData";
 import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
-import EmailIcon from "@mui/icons-material/Email";
-import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
+import HourglassEmptyIcon from '@mui/icons-material/HourglassEmpty';
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import VisibilityIcon from '@mui/icons-material/Visibility';
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
-import TrafficIcon from "@mui/icons-material/Traffic";
 import Header from "../../components/Header";
 import LineChart from "../../components/LineChart";
 import GeographyChart from "../../components/GeographyChart";
-import BarChart from "../../components/BarChart";
 import StatBox from "../../components/StatBox";
 import ProgressCircle from "../../components/ProgressCircle";
 
@@ -26,7 +25,7 @@ const Dashboard = () => {
         <Box>
           <Button
             sx={{
-              backgroundColor: colors.blueAccent[700],
+              backgroundColor: colors.greenAccent[700],
               color: colors.grey[100],
               fontSize: "14px",
               fontWeight: "bold",
@@ -56,12 +55,12 @@ const Dashboard = () => {
           borderRadius={3}
         >
           <StatBox
-            title="12,361"
-            subtitle="Emails Sent"
+            title="$12,361"
+            subtitle="Revenue"
             progress="0.75"
             increase="+14%"
             icon={
-              <EmailIcon
+              <AttachMoneyIcon
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
               />
             }
@@ -76,12 +75,12 @@ const Dashboard = () => {
           borderRadius={3}
         >
           <StatBox
-            title="431,225"
-            subtitle="Sales Obtained"
+            title="20,431,225"
+            subtitle="Veiws"
             progress="0.50"
             increase="+21%"
             icon={
-              <PointOfSaleIcon
+              <VisibilityIcon
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
               />
             }
@@ -97,7 +96,7 @@ const Dashboard = () => {
         >
           <StatBox
             title="32,441"
-            subtitle="New Clients"
+            subtitle="New Followers"
             progress="0.30"
             increase="+5%"
             icon={
@@ -116,12 +115,12 @@ const Dashboard = () => {
           borderRadius={3}
         >
           <StatBox
-            title="1,325,134"
-            subtitle="Traffic Received"
+            title="205,325,134"
+            subtitle="Watch Minutes"
             progress="0.80"
             increase="+43%"
             icon={
-              <TrafficIcon
+              <HourglassEmptyIcon
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
               />
             }
@@ -155,7 +154,7 @@ const Dashboard = () => {
                 fontWeight="bold"
                 color={colors.greenAccent[500]}
               >
-                $59,342.32
+                $12,361
               </Typography>
             </Box>
             <Box>
@@ -186,7 +185,7 @@ const Dashboard = () => {
             p="15px"
           >
             <Typography color={colors.grey[100]} variant="h5" fontWeight="600">
-              Recent Transactions
+              Sponsors
             </Typography>
           </Box>
           {mockTransactions.map((transaction, i) => (
@@ -231,7 +230,7 @@ const Dashboard = () => {
           p="30px"
         >
           <Typography variant="h5" fontWeight="600">
-            Campaign
+            Gender
           </Typography>
           <Box
             display="flex"
@@ -241,13 +240,12 @@ const Dashboard = () => {
           >
             <ProgressCircle size="125" />
             <Typography
-              variant="h5"
+              variant="h3"
               color={colors.greenAccent[500]}
-              sx={{ mt: "15px" }}
+              sx={{ mt: "25px" }}
             >
-              $48,352 revenue generated
+              Female / Male
             </Typography>
-            <Typography>Includes extra misc expenditures and costs</Typography>
           </Box>
         </Box>
         <Box
@@ -256,24 +254,7 @@ const Dashboard = () => {
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
         >
-          <Typography
-            variant="h5"
-            fontWeight="600"
-            sx={{ padding: "30px 30px 0 30px" }}
-          >
-            Sales Quantity
-          </Typography>
-          <Box height="250px" mt="-20px">
-            <BarChart isDashboard={true} />
-          </Box>
-        </Box>
-        <Box
-          gridColumn="span 4"
-          borderRadius={3}
-          gridRow="span 2"
-          backgroundColor={colors.primary[400]}
-          padding="30px"
-        >
+          
           <Typography
             variant="h5"
             fontWeight="600"

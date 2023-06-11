@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 import "react-pro-sidebar/dist/css/styles.css";
 import { tokens } from "../../theme";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
+import VisibilityIcon from '@mui/icons-material/Visibility';
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
-import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
-import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
@@ -45,7 +45,7 @@ const Sidebar = () => {
     <Box
       sx={{
         "& .pro-sidebar-inner": {
-          background: `${colors.primary[400]} !important`,
+          background: `${colors.primary[700]} !important`,
         },
         "& .pro-icon-wrapper": {
           backgroundColor: "transparent !important",
@@ -54,10 +54,10 @@ const Sidebar = () => {
           padding: "5px 35px 5px 20px !important",
         },
         "& .pro-inner-item:hover": {
-          color: "#868dfb !important",
+          color: "#D870B8 !important",
         },
         "& .pro-menu-item.active": {
-          color: "#6870fa !important",
+          color: "#CE4CA8 !important",
         },
       }}
     >
@@ -80,7 +80,7 @@ const Sidebar = () => {
                 ml="15px"
               >
                 <Typography variant="h3" color={colors.grey[100]}>
-                  TaskBar
+                  
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlinedIcon />
@@ -103,13 +103,13 @@ const Sidebar = () => {
               <Box textAlign="center">
                 <Typography
                   variant="h2"
-                  color={colors.grey[100]}
+                  color={colors.grey[200]}
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
                   Nicolas Blackson
                 </Typography>
-                <Typography variant="h5" color={colors.greenAccent[500]}>
+                <Typography variant="h5" color={colors.greenAccent[200]}>
                   CD Software Dev
                 </Typography>
               </Box>
@@ -120,100 +120,57 @@ const Sidebar = () => {
             <Item
               title="Dashboard"
               to="/"
-              icon={<HomeOutlinedIcon />}
+              icon={<HomeOutlinedIcon/>}
               selected={selected}
               setSelected={setSelected}
             />
 
             <Typography
               variant="h6"
-              color={colors.grey[300]}
+              color={colors.greenAccent[200]}
               sx={{ m: "15px 0 5px 20px" }}
             >
               Data
             </Typography>
             <Item
-              title="Manage Team"
-              to="/team"
+              title="Manage Followers"
+              to="/followers"
               icon={<PeopleOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
-              title="Contacts Information"
-              to="/contacts"
-              icon={<ContactsOutlinedIcon />}
+              title="Veiwers"
+              to="/veiwers"
+              icon={<VisibilityIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
-              title="Invoices Balances"
-              to="/invoices"
-              icon={<ReceiptOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-
-            <Typography
-              variant="h6"
-              color={colors.grey[300]}
-              sx={{ m: "15px 0 5px 20px" }}
-            >
-              Pages
-            </Typography>
-            <Item
-              title="Profile Form"
-              to="/form"
-              icon={<PersonOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Calendar"
-              to="/calendar"
-              icon={<CalendarTodayOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="FAQ Page"
-              to="/faq"
-              icon={<HelpOutlineOutlinedIcon />}
+              title="Revenue"
+              to="/revenue"
+              icon={<AttachMoneyIcon />}
               selected={selected}
               setSelected={setSelected}
             />
 
             <Typography
               variant="h6"
-              color={colors.grey[300]}
+              color={colors.greenAccent[200]}
               sx={{ m: "15px 0 5px 20px" }}
             >
-              Charts
+              Demographic
             </Typography>
             <Item
-              title="Bar Chart"
-              to="/bar"
-              icon={<BarChartOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Pie Chart"
-              to="/pie"
+              title="Ages"
+              to="/ages"
               icon={<PieChartOutlineOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
-              title="Line Chart"
-              to="/line"
-              icon={<TimelineOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Geography Chart"
-              to="/geography"
+              title="Geo Location"
+              to="/geoLocation"
               icon={<MapOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}

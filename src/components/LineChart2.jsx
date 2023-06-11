@@ -1,7 +1,7 @@
 import { ResponsiveLine } from "@nivo/line";
 import { useTheme } from "@mui/material";
 import { tokens } from "../theme";
-import { mockLineData as data } from "../data/mockData";
+import { mockLineData2 as data } from "../data/mockData";
 
 const LineChart = ({ isCustomLineColors = false, isDashboard = false }) => {
   const theme = useTheme();
@@ -68,7 +68,7 @@ const LineChart = ({ isCustomLineColors = false, isDashboard = false }) => {
       }}
       axisLeft={{
         orient: "left",
-        tickValues: 5, // added
+        tickValues: 8, // added
         tickSize: 3,
         tickPadding: 5,
         tickRotation: 0,
