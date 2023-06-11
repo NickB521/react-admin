@@ -56,7 +56,7 @@ const Dashboard = () => {
         >
           <StatBox
             title="$12,361"
-            subtitle="Revenue"
+            subtitle="Monthly Revenue"
             progress="0.75"
             increase="+14%"
             icon={
@@ -76,7 +76,7 @@ const Dashboard = () => {
         >
           <StatBox
             title="20,431,225"
-            subtitle="Veiws"
+            subtitle="Monthly Views"
             progress="0.50"
             increase="+21%"
             icon={
@@ -96,7 +96,7 @@ const Dashboard = () => {
         >
           <StatBox
             title="32,441"
-            subtitle="New Followers"
+            subtitle="Monthly Followers"
             progress="0.30"
             increase="+5%"
             icon={
@@ -116,7 +116,7 @@ const Dashboard = () => {
         >
           <StatBox
             title="205,325,134"
-            subtitle="Watch Minutes"
+            subtitle="Monthly Watch Minutes"
             progress="0.80"
             increase="+43%"
             icon={

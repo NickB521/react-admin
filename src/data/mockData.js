@@ -185,7 +185,7 @@ export const mockPieData = [
 
 export const mockLineData = [
   {
-    id: "Revenue",
+    id: "2023",
     color: tokens("dark").greenAccent[500],
     data: [
       {
@@ -238,7 +238,6 @@ export const mockLineData = [
       },
     ],
   },
-  
 ];
 export const mockLineData2 = [
   {

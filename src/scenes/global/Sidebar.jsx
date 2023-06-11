@@ -8,12 +8,7 @@ import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
-import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
-import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
-import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
-import BarChartOutlinedIcon from "@mui/icons-material/BarChartOutlined";
 import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutlined";
-import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 
@@ -45,7 +40,7 @@ const Sidebar = () => {
     <Box
       sx={{
         "& .pro-sidebar-inner": {
-          background: `${colors.primary[700]} !important`,
+          background: `${colors.greenAccent[900]} !important`,
         },
         "& .pro-icon-wrapper": {
           backgroundColor: "transparent !important",
@@ -96,7 +91,7 @@ const Sidebar = () => {
                   alt="profile-user"
                   width="100px"
                   height="100px"
-                  src={`../../assets/IMG_1798.jpg`}
+                  src={`../../assets/nick.jpeg`}
                   style={{ cursor: "pointer", borderRadius: "50%" }}
                 />
               </Box>
@@ -110,7 +105,7 @@ const Sidebar = () => {
                   Nicolas Blackson
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[200]}>
-                  CD Software Dev
+                  CodeTuber
                 </Typography>
               </Box>
             </Box>
@@ -159,7 +154,7 @@ const Sidebar = () => {
               color={colors.greenAccent[200]}
               sx={{ m: "15px 0 5px 20px" }}
             >
-              Demographic
+              Demo
             </Typography>
             <Item
               title="Ages"
